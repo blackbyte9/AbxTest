@@ -1,5 +1,6 @@
 package com.abraxy.abxtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -49,13 +50,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void onCharButton(View view) {
         Log.v("MapsActivity", "onCharButton");
+        Intent intent = new Intent(this, CharActivity.class);
+        startActivity(intent);
     }
 
     public void onNearButton(View view) {
         Log.v("MapsActivity", "onNearButton");
+        Intent intent = new Intent(this, NearActivity.class);
+        startActivity(intent);
     }
 
     public void onInvButton(View view) {
         Log.v("MapsActivity", "onInvButton");
+        Intent intent = new Intent(this, InvActivity.class);
+        startActivity(intent);
     }
 }
