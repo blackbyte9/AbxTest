@@ -2,6 +2,8 @@ package com.abraxy.abxtest;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -43,5 +45,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(ulm).title("Marker in Neu-Ulm"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ulm));
 
+    }
+
+    public void onCharButton(View view) {
+        Log.v("MapsActivity", "onCharButton");
+    }
+
+    public void onNearButton(View view) {
+        Log.v("MapsActivity", "onNearButton");
+    }
+
+    public void onInvButton(View view) {
+        Log.v("MapsActivity", "onInvButton");
     }
 }

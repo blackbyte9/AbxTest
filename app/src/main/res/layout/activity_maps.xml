@@ -17,6 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
+        android:onClick="onInvButton"
         android:text="@string/mapsInv" />
 
     <Button
@@ -27,6 +28,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="25dp"
         android:layout_marginStart="25dp"
+        android:onClick="onCharButton"
         android:text="@string/mapsChar" />
 
     <Button
@@ -37,6 +39,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="25dp"
         android:layout_marginEnd="25dp"
+        android:onClick="onNearButton"
         android:text="@string/mapsNear"
         tools:ignore="RelativeOverlap" />
 
