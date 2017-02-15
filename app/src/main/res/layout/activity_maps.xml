@@ -9,4 +9,45 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/invButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/mapsInv" />
+
+    <Button
+        android:id="@+id/charButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/mapsChar" />
+
+    <Button
+        android:id="@+id/nearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/mapsNear"
+        tools:ignore="RelativeOverlap" />
+
+    <ToggleButton
+        android:id="@+id/trackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/mapsTracking"
+        tools:ignore="RelativeOverlap" />
 </RelativeLayout>
