@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AbxTest</string>
     <string name="title_activity_maps">Map</string>
+    <string name="mapsInv">Inv</string>
+    <string name="mapsChar">Char</string>
+    <string name="mapsNear">Near</string>
+    <string name="mapsTracking">Tracking</string>
 </resources>
