@@ -5,4 +5,10 @@
     <string name="mapsChar">Char</string>
     <string name="mapsNear">Near</string>
     <string name="mapsTracking">Tracking</string>
+    <string name="mapNear_description">List of nearby things</string>
+    <string name="charActivity_profileButton">Profile</string>
+    <string name="charActivity_fighterButton">Fighter</string>
+    <string name="charActivity_settingsButton">Settings</string>
+    <string name="charActivity_helpButton">Help</string>
+    <string name="inventoryActivity_description">Inventory Activity</string>
 </resources>
