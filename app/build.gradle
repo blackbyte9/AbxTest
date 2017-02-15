@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+//noinspection GroovyMissingReturnStatement
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -25,6 +26,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.google.android.gms:play-services:10.0.1'
+    // keep version 9.8.0 for google play - otherwise the emulator is broken
+    //noinspection GradleDependency
+    compile 'com.google.android.gms:play-services:9.8.0'
     testCompile 'junit:junit:4.12'
 }
