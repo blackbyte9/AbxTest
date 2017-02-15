@@ -10,4 +10,5 @@
     <string name="charActivity_fighterButton">Fighter</string>
     <string name="charActivity_settingsButton">Settings</string>
     <string name="charActivity_helpButton">Help</string>
+    <string name="inventoryActivity_description">Inventory Activity</string>
 </resources>

@@ -42,9 +42,6 @@
         <activity android:name=".CharActivity" />
         <activity android:name=".InvActivity" />
         <activity android:name=".NearActivity" />
-        <activity android:name=".InvActivityFighterTab" />
-        <activity android:name=".InvActivityResourcesTab" />
-        <activity android:name=".InvActivityToolsTab"></activity>
     </application>
 
 </manifest>
