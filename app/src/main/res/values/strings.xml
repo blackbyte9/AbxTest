@@ -11,7 +11,5 @@
     <string name="charActivity_settingsButton">Settings</string>
     <string name="charActivity_helpButton">Help</string>
     <string name="inventoryActivity_description">Inventory Activity</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backButton_text">X</string>
 </resources>
