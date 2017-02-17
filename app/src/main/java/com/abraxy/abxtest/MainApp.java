@@ -69,20 +69,27 @@ public class MainApp extends Application implements GoogleApiClient.ConnectionCa
     public void onCreate() {
         super.onCreate();
         Log.v("MainApp", "onCreate");
-        buildGoogleApiClient();
-        buildLocationRequest();
-        buildLocationPendingIntent();
-        mGoogleClient.connect();
+        Intent intent = new Intent(this, LocationUpdateService.class);
+        intent.setAction(LocationUpdateService.ACTION_STARTLOCATION);
+        startService(intent);
+//        buildGoogleApiClient();
+//        buildLocationRequest();
+//        buildLocationPendingIntent();
+//        mGoogleClient.connect();
     }
 
     @Override
     public void onTerminate() {
         Log.v("MainApp", "onTerminate");
-        if (mGoogleClient != null && mGoogleClient.isConnected()) {
-            mGoogleClient.disconnect();
-        }
-        mGoogleClient = null;
-        super.onTerminate();
+        Intent intent = new Intent(this, LocationUpdateService.class);
+        intent.setAction(LocationUpdateService.ACTION_STOPLOCATION);
+        startService(intent);
+
+//        if (mGoogleClient != null && mGoogleClient.isConnected()) {
+//            mGoogleClient.disconnect();
+//        }
+//        mGoogleClient = null;
+//        super.onTerminate();
     }
 
     @Override
