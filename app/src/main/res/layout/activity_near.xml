@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.abraxy.abxtest.NearActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:text="@string/mapNear_description" />
-
     <fragment
         android:id="@+id/fragment"
         android:name="com.abraxy.abxtest.BackButtonFragment"
@@ -23,4 +14,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp" />
+
+    <ListView
+        android:id="@+id/nearListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
